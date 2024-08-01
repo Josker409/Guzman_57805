@@ -1,0 +1,23 @@
+[
+	{
+		"name": "Campo de 8 hectareas en Zarate",
+		"id": "1",
+		"category": "Campo",
+		"detail": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+		"img": "https://a0.muscache.com/im/pictures/0a02fbd5-b0f3-4f59-9d11-14fc127e6136.jpg?im_w=720"
+	},
+	{
+		"name": "Campo en Misiones",
+		"id": 2,
+		"category": "Campo",
+		"detail": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+		"img": "https://www.bienesonline.com/paneldecontrol/photos2/campos-y-chacras-en-misiones-y-norte-de-corrientes-13792963624.jpg"
+	},
+	{
+		"name": "Departamento en Puerto Madero",
+		"id": 3,
+		"category": "Departamento",
+		"detail": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+		"img": "https://proaimg.s3-sa-east-1.amazonaws.com/propiedad/original/674/674862.jpg"
+	}
+]

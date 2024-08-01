@@ -1,0 +1,112 @@
+span {
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: whitesmoke;
+  }
+  .catalogo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .titulo{
+    margin-left: 20px;
+  }
+  
+  .desc{
+    margin-left: 20px;
+  }
+  
+  .precio{
+    margin-left: 20px;
+  }
+  
+   .btn{
+    margin-left: 20px;
+    border: 2px solid black;
+  } 
+  
+  .item{
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  .item-image {
+    width: 100px;
+    height: auto;
+   
+  
+  }
+  
+  .item-list {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+  }
+  
+  .nosotros{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .n-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  .p-text{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      width: 100%;
+      padding: 10px;
+   
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  form > div {
+    margin-bottom: 15px;
+  }
