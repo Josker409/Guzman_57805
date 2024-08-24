@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { createContext, useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
     const onAdd = (quantity) => {
@@ -6,10 +7,29 @@ import ItemCount from "./ItemCount";
         setShowCount(false);                
     };
 
+ const CartContext = createContext();
 
-const ItemDetail = ({ item}) => {
+ export const useCart = () => useContext(CartContext);
+
+ export const CartProvider = ({ children }) => {
+    const [purchaseCompleted, setPurchaseCompleted] = useState(false);
+
+    return(
+        <CartContext.Provider value={{ purchaseCompleted, setPurchaseCompleted }}>
+            {children}
+        </CartContext.Provider>
+    )
+}
+
+const ItemDetail = ({ item }) => {
     const [count, setCount] = useState(0);
     const [showCount, setShowCount] = useState(true);
+    const navigate = useNavigate();
+
+    const onAdd = (quantity) => {
+        setCount(quantity);
+        setShowCount(false);                
+    };
     
 
     return(
@@ -21,7 +41,7 @@ const ItemDetail = ({ item}) => {
             {showCount ? (
                 <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
             ): (
-                <button onClick={() => history.pushState("/cart")}>Finalizar la compra</button>
+                <button onClick={() => navigate("/cart")}>Finalizar la compra</button>
             )}
         </div>
     );

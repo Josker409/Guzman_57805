@@ -110,3 +110,8 @@ span {
   form > div {
     margin-bottom: 15px;
   }
+
+  .gracias{
+    display: flex;
+    text-align: center;
+  }
